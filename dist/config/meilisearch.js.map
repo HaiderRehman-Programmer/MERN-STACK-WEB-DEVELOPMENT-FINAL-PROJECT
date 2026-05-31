@@ -1,0 +1,1 @@
+{"version":3,"file":"meilisearch.js","sourceRoot":"","sources":["../../src/config/meilisearch.ts"],"names":[],"mappings":";;;AAAA,6CAA0C;AAC1C,+BAA4B;AAEf,QAAA,KAAK,GAAG,IAAI,yBAAW,CAAC;IACnC,IAAI,EAAE,SAAG,CAAC,gBAAgB;IAC1B,GAAG,CAAC,SAAG,CAAC,mBAAmB,IAAI,EAAE,MAAM,EAAE,SAAG,CAAC,mBAAmB,EAAE,CAAC;CACpE,CAAC,CAAC"}

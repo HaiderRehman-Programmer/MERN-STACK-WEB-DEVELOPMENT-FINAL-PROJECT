@@ -1,0 +1,1 @@
+{"version":3,"file":"enrollments.schema.js","sourceRoot":"","sources":["../../../src/modules/enrollments/enrollments.schema.ts"],"names":[],"mappings":";;;AAAA,6BAAwB;AAEX,QAAA,sBAAsB,GAAG,OAAC,CAAC,MAAM,CAAC;IAC7C,IAAI,EAAE,OAAC,CAAC,MAAM,CAAC;QACb,QAAQ,EAAE,OAAC,CAAC,MAAM,EAAE,CAAC,IAAI,CAAC,4BAA4B,CAAC;KACxD,CAAC,CAAC,MAAM,EAAE;CACZ,CAAC,CAAC"}
