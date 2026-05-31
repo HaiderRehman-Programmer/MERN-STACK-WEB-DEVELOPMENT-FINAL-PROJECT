@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
-client/node_modules/
+frontend/node_modules/
 dist/
-client/dist/
+frontend/dist/
 
 # Environment / Secrets
 .env
@@ -34,5 +34,13 @@ coverage/
 *.d.ts
 *.d.ts.map
 !src/**/*.ts
-!client/src/**/*.tsx
-!client/src/**/*.ts
+!frontend/src/**/*.tsx
+!frontend/src/**/*.ts
+
+# Legacy database files (from previous PERN stack)
+drizzle.config.*
+sqlite.db*
+sqlite_test.db
+
+# Test output
+test_output.txt

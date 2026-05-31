@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1776424294854,
+      "tag": "0000_fancy_johnny_blaze",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1776425015262,
+      "tag": "0001_narrow_norrin_radd",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1776591298850,
+      "tag": "0002_tricky_grim_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1776686549952,
+      "tag": "0003_chemical_lord_tyger",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1776686857422,
+      "tag": "0004_careful_kang",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1776687089096,
+      "tag": "0005_pale_goblin_queen",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1776687333825,
+      "tag": "0006_sturdy_outlaw_kid",
+      "breakpoints": true
+    }
+  ]
+}
