@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: lms_database
+    environment:
+      MONGO_INITDB_DATABASE: lms_project
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: lms_api
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - DATABASE_URL=mongodb://mongodb:27017/lms_project
+      - JWT_SECRET=supersecretplaceholder
+      - STRIPE_SECRET_KEY=sk_test_placeholder
+      - STRIPE_WEBHOOK_SECRET=whsec_placeholder
+    restart: always
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.6
+    container_name: lms_search
+    environment:
+      - MEILI_MASTER_KEY=masterKey
+      - MEILI_ENV=development
+    ports:
+      - "7700:7700"
+    volumes:
+      - meilisearch_data:/meili_data
+    restart: always
+
+volumes:
+  mongodata:
+  meilisearch_data:

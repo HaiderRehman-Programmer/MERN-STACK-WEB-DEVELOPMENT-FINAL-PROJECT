@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Environment / Secrets
+.env
+.env.test
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project Specific
+uploads/
+coverage/
+.antigravity_docs/
+.gemini/
+
+# Build artifacts
+*.js.map
+*.d.ts
+*.d.ts.map
+!src/**/*.ts
+!frontend/src/**/*.tsx
+!frontend/src/**/*.ts
+
+# Legacy database files (from previous PERN stack)
+drizzle.config.*
+sqlite.db*
+sqlite_test.db
+
+# Test output
+test_output.txt
